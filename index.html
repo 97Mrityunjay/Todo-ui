@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+        <div class="container">
+            <header>
+            <div class="heading">
+                <h1>Zira Clone</h1>
+            </div>
+            <div class="addbtn">
+                <button class="add">+</button>
+            </div>
+           </header>
+           <main class="todo_container">
+           <div class="todo_list">
+                   <div class="header">
+                       <button class="cross">X</button>
+                       <button class="minimize">-</button>
+                    </div>
+                  <textarea rows="14" class="text"></textarea>
+         </div>
+         </main>
+         <footer>Mrityunjay @copyright reserved</footer>
+        </div>
+        <div class="add_todo_container"id="dialog">
+            <div class="form_container">
+                <div class="close">X</div>
+                <div class="minimize">-</div>
+                <div class="form">
+                    <div class="heading"> Add a new Task</div>
+                  <input type="text"class="title"placeholder="Enter a title"><br><br>
+                  <div class="text">
+                      <textarea rows="5"id="todo_text"></textarea>
+                  </div>
+                   <div class="error">
+                      Title or description cannot be empty
+                   </div>
+                   <button onclick="addtodo()">Add</button>
+                 </div>
+            </div>
+        </div>
+</body>
+<script src="script.js"></script>
+</html>
